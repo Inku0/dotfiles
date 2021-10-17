@@ -1,0 +1,29 @@
+"custom.styles"
+{
+colors{Focus="102 36 226 255"
+basefont="Segoe UI"
+semibold="Segoe UI Semibold"
+semilight="Segoe UI Semilight"
+light="Segoe UI Light"
+basefont="Helvetica Neue" [$OSX]
+semibold="Helvetica Neue Medium" [$OSX]
+semilight="Helvetica Neue Light" [$OSX]
+light="Helvetica Neue Thin" [$OSX]
+black45="20 15 11 120"
+Focus="127 128 123 255"
+Friends_InGame="116 108 99 255"
+Friends_Online="129 93 62 255"
+FrameBorder="20 15 11 255"
+GameList="20 15 11 255"
+Dividers="205 202 199 255"
+Seperator="205 202 199 255"
+OverlayBackground="20 15 11 80"
+OverlayPanels="20 15 11 120"
+OverlayClock="205 202 199 120"
+OverlaySideButtons="116 108 99 120"
+OverlaySideButtons_h="127 128 123 120"
+TextEntry="20 15 11 255"
+Header_Dark="20 15 11 255"
+ClientBG="20 15 11 255"}
+
+styles{"CSteamRootDialog"{bgcolor=ClientBG render_bg{ 0="fill( x0, y0, x1, y1, ClientBG )" 8="image( x1 - 821, y1 - 375, x1, y1, none)" 98="fill( x0, y0, x1, y0+40, FrameBorder)" 99="fill( x0, y0, x1, y0+39, Header_Dark )"}}"GameItem_Uninstalled"{render{0="image(x1-18,y1-26,x1,y1,graphics/metro/icons/grid_uninstalled)"}} }}
