@@ -1,0 +1,14 @@
+[Unit]
+Description=autostart wl-paste
+After=wayland-session@hyprland.desktop.target
+
+[Service]
+Type=exec
+# Repurpose XDG Autostart filtering
+ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "Hyprland" ""
+ExecStart=wl-gammarelay-rs
+Restart=on-failure
+Slice=background-graphical.slice
+
+[Install]
+WantedBy=wayland-session@hyprland.desktop.target

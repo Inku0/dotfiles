@@ -1,0 +1,33 @@
+export APP2UNIT_SLICES='a=app-graphical.slice b=background-graphical.slice s=session-graphical.slice'
+export APP2UNIT_TYPE=service
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+#export WLR_DRM_DEVICES=/dev/dri/card0
+#export MESA_LOADER_DRIVER_OVERRIDE=iris
+#export WLR_DRM_NO_MODIFIERS=1
+# Hardware cursors not yet working on wlroots
+#export WLR_NO_HARDWARE_CURSORS=1
+
+export XCURSOR_SIZE=24
+export HYPRCURSOR_SIZE=24
+
+# Set wlroots renderer to Vulkan to avoid flickering
+export WLR_RENDERER=vulkan
+
+# General wayland environment variables
+#export XDG_SESSION_TYPE=wayland
+#export QT_QPA_PLATFORM=wayland
+#export WAYLAND_DISPLAY=wayland-0
+#export XDG_SESSION_DESKTOP=hyprland
+#export XDG_CURRENT_DESKTOP=hyprland
+
+# GTK and QT coexistence
+export QT_QPA_PLATFORMTHEME=gtk3
+export QT_WAYLAND_DECORATION=whitesur-gtk
+
+# nvidia
+export __GL_VRR_ALLOWED=1
+
+# android
+export ANDROID_HOME=/home/gungnir/Android/Sdk

@@ -1,0 +1,10 @@
+[Unit]
+Description=swaylock after some time
+#After=graphical-session.target
+
+[Service]
+ExecStart=swayidle -w timeout 600 'swaylock -f -i ~/downloads/Tranquility.png' before-sleep 'swaylock -f -c 000000'
+Type=simple
+
+[Install]
+WantedBy=graphical.target

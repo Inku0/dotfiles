@@ -1,0 +1,10 @@
+[Unit]
+Description=autostart things for dwl
+#After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/dwl-autostart
+Type=simple
+
+[Install]
+WantedBy=graphical.target
