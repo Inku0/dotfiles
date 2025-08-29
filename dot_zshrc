@@ -88,6 +88,8 @@ export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 # FOR WLUMA TO WORK, now in /etc/environment
 #export WLR_DRM_NO_MODIFIERS=1
 
+export EDITOR=nano
+
 # Source additional local files if they exist.
 z4h source ~/.env.zsh
 z4h source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
