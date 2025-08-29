@@ -243,6 +243,8 @@ typec
 typec_ucsi
 uas
 ucsi_acpi
+usb_common
+usbcore
 usbhid
 usb_storage
 uvc
