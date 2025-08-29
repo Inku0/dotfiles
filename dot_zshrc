@@ -80,6 +80,7 @@ export QT_WAYLAND_DECORATION=whitesur-gtk
 #export VK_DRIVER_FILES=
 export XDG_CONFIG_HOME=$HOME/.config
 #export QT_QPA_PLATFORM=wayland
+export COREPACK_ENABLE_STRICT=0
 
 # ssh-agent variable
 export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
@@ -150,6 +151,7 @@ alias grep='rg'
 alias nmap='rustscan --ulimit 5000 -a'
 alias cb='wl-copy'
 alias unrar='unrar; echo "DONT FORGET TO USE X AS MODIFIER"'
+alias tree-git='git ls-files | tree --fromfile'
 
 # Add flags to existing aliases.
 #alias ls="${aliases[ls]:-ls} -A"
