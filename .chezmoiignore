@@ -1,0 +1,5 @@
+.config/systemd/user/default.target.wants
+.config/systemd/user/dunst.service.d
+.config/systemd/user/graphical-session.target.wants
+.config/systemd/user/sockets.target.wants
+.config/systemd/user/wayland-session@hyprland.desktop.target.wants
