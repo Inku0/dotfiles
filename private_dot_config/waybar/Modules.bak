@@ -26,7 +26,7 @@
 	"interval": 2,
 	"align": 0,
 	"rotate": 0,
-	"format": "{icon} {percent}%",
+	//"format": "{icon} {percent}%",
 	"format-icons": [
 		" ",
 		" ",
@@ -36,7 +36,7 @@
 		"󰃟 ",
 		"󰃠 "
 	],
-	//"format": "{icon}",
+	"format": "{icon}",
 	//"format-icons": ["","","","","","","","","","","","","","",""],
 	"tooltip-format": "backlight {percent}%",
 	"icon-size": 10,
@@ -96,9 +96,9 @@
 },
 
 "clock": {
-	"interval": 10,
+	"interval": 1,
     //"format": " {:%I:%M %p}", // AM PM format
-    "format": " {:%H:%M}", // 24H
+    "format": " {:%H:%M:%S}", // 24H
 	"format-alt": " {:%H:%M   %Y, %d %B, %A}",
 	"tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
@@ -175,12 +175,9 @@
 },
 
 "hyprland/language": {
-	"format": "{}",
-	"format-en": "en",
-	"format-ee": "ee",
-	"format-et": "ee",
-	"format-se": "se",
-	"format-sv": "se",
+	"format": "Lang: {}",
+	"format-en": "US",
+	"format-tr": "Korea",
 	"keyboard-name": "at-translated-set-2-keyboard",
 	"on-click": "hyprctl switchxkblayout $SET_KB next"
 },

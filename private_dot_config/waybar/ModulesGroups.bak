@@ -13,7 +13,12 @@
 		"transition-left-to-right": true
         },
 	"modules": [
+		"custom/menu",
 		"custom/light_dark",
+		"custom/file_manager",
+		"custom/tty",
+		"custom/browser",
+		"custom/settings",
 	]
 },
 "group/motherboard": {
@@ -39,22 +44,14 @@
 		"cpu",
 		"power-profiles-daemon",	
 		"memory",
-        "network#speed",
+		"disk",
 	]
 },
 "group/laptop": {
 	"orientation": "inherit",
-    "drawer": {
-        "transition-duration": 500,
-        "children-class": "cpu",
-        "transition-left-to-right": true
-        },
 	"modules": [
+		"backlight",
 		"battery",
-        "custom/separator#dot-line",
-        "custom/wl-gammarelay-brightness",
-        "custom/separator#dot-line",
-        "custom/wl-gammarelay-temperature",
 	]
 },
 "group/audio": {
@@ -92,6 +89,9 @@
         },
 	"modules": [
 		"custom/power",
+		"custom/lock",
+		"keyboard-state",
+		"custom/keyboard",
 	]
 },
 "group/notify": {
@@ -103,6 +103,7 @@
         },
 	"modules": [
 		"custom/swaync",
+		"custom/dot_update",
 	]
 },
 

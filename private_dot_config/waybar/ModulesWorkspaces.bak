@@ -171,10 +171,12 @@
 	"all-outputs": true,
 	"warp-on-scroll": false,
 	"sort-by-number": true,
-	"show-special": true,
+	"show-special": false,
 	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
 	"persistent-workspaces": {
-		"*": 1
+		"*": 5
 	  },
 	"format": "{icon} {windows}",
 	"format-window-separator": " ",
@@ -184,7 +186,7 @@
 		"title<.*reddit.*>": " ",
 
 		"class<firefox|org.mozilla.firefox|librewolf|floorp|mercury-browser|[Cc]achy-browser>": " ",
-		"class<zen>": "󰖟 ",
+		"class<zen>": "󰰷 ",
 		"class<waterfox|waterfox-bin>": " ",
 		"class<microsoft-edge>": " ",
 		"class<Chromium|Thorium|[Cc]hrome>": " ",
@@ -194,7 +196,6 @@
 
 		"class<kitty|konsole>": " ",
 		"class<kitty-dropterm>": " ",
-		"class<footclient>": " ",
 		"class<com.mitchellh.ghostty>": " ",
 		"class<org.wezfurlong.wezterm>": " ",
 

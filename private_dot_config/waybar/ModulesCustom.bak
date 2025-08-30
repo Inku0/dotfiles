@@ -17,25 +17,6 @@
 	"tooltip": true,
 },
 
-    "custom/wl-gammarelay-temperature": {
-        "format": "{} ",
-        "exec": "wl-gammarelay-rs watch {t}",
-        "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +100",
-        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -100"
-    },
-    "custom/wl-gammarelay-brightness": {
-        "format": "{}% ",
-        "exec": "wl-gammarelay-rs watch {bp}",
-        "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
-        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
-    },
-    "custom/wl-gammarelay-gamma": {
-        "format": "{}% γ",
-        "exec": "wl-gammarelay-rs watch {g}",
-        "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateGamma d +0.02",
-        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateGamma d -0.02"
-    },
-
 "custom/file_manager": {
 	"format": " ",
 	"on-click": "$HOME/.config/hypr/scripts/WaybarScripts.sh --files",
@@ -108,10 +89,12 @@
 },
 
 "custom/light_dark": {
-	"format": " 󰔎",
+	"format": " 󰔎 ",
 	"on-click": "$HOME/.config/hypr/scripts/DarkLight.sh",
+	"on-click-right": "$HOME/.config/hypr/scripts/WaybarStyles.sh",
+	"on-click-middle": "$HOME/.config/hypr/UserScripts/WallpaperSelect.sh",
 	"tooltip": true,
-	"tooltip-format": "Left Click: Switch Dark-Light Themes",
+	"tooltip-format": "Left Click: Switch Dark-Light Themes\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Styles Menu",
 },
 
 "custom/lock": {
@@ -151,9 +134,10 @@
     
 "custom/power": {
 	"format": " ⏻ ",
-	"on-click": "/usr/bin/powermenu",
+	"on-click": "$HOME/.config/hypr/scripts/Wlogout.sh",
+	"on-click-right": "$HOME/.config/hypr/scripts/ChangeBlur.sh",
 	"tooltip": true,
-	"tooltip-format": "Left Click: powermenu",
+	"tooltip-format": "Left Click: Logout Menu\nRight Click: Change Blur",
 },
 
 "custom/reboot": {
@@ -173,7 +157,7 @@
 "custom/swaync": {
 	"tooltip": true,
 	"tooltip-format": "Left Click: Launch Notification Center\nRight Click: Do not Disturb",
-	"format": "{} {icon}",
+	"format": "{} {icon} ",
 	"format-icons": {
 		"notification": "<span foreground='red'><sup></sup></span>",
 		"none": "",
